@@ -1,0 +1,36 @@
+# Node dependencies
+node_modules/
+frontend/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python bytecode & cache
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables & local secrets
+.env
+.env.local
+.env.*.local
+
+# IDE and Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
