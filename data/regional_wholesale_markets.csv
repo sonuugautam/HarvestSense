@@ -1,0 +1,6 @@
+Market_ID,Market_Name,Market_Type,Distance_KM,Transit_Hours,Base_Handling_Fee_INR_per_Q,Entry_Cess_Rate_Pct,Buyer_Competition_Level,Price_Spread_Multiplier,Daily_Volume_Capacity_Quintals,Liquidity_Rating,Provenance
+local_rural_mandi,Local Taluka Mandi Yard,Rural Primary Market (Panchayat Yard),14.0,0.8,22.0,0.8,LOW,0.91,800,7.2,SYNTHETIC_LOCAL_MARKET
+district_apmc_hub,District Central APMC Market,Principal APMC Mandi Yard,48.0,1.8,35.0,1.2,HIGH,1.05,5500,9.2,SYNTHETIC_LOCAL_MARKET
+metro_terminal_market,Metro Mega Wholesale Terminal,Metropolitan Consumption Terminal,145.0,4.5,52.0,1.8,VERY_HIGH,1.22,18000,9.8,SYNTHETIC_LOCAL_MARKET
+agro_processing_cluster,Agro-Processing & Cold-Chain Hub,Industrial Food Processor / Aggregator,78.0,2.5,28.0,0.5,MEDIUM,1.11,3500,8.5,SYNTHETIC_LOCAL_MARKET
+fpo_collective_center,FPO Cooperative Aggregation Center,Farmer Producer Organization Hub,26.0,1.1,18.0,0.0,MEDIUM,1.02,1200,8.0,SYNTHETIC_LOCAL_MARKET

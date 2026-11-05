@@ -1,0 +1,43 @@
+Crop_ID,Crop_Name,Scientific_Name,FAO_Item_Code,Perishability_Class,Year,Price_USD_per_Tonne,Price_LCU_per_Quintal,Baseline_Reference_Price,Data_Provenance
+tomatoes,Tomatoes,Solanum lycopersicum,388,HIGH,2018,320.0,2240.0,2850.0,FAOSTAT_HISTORICAL
+tomatoes,Tomatoes,Solanum lycopersicum,388,HIGH,2019,345.0,2420.0,2850.0,FAOSTAT_HISTORICAL
+tomatoes,Tomatoes,Solanum lycopersicum,388,HIGH,2020,360.0,2660.0,2850.0,FAOSTAT_HISTORICAL
+tomatoes,Tomatoes,Solanum lycopersicum,388,HIGH,2021,390.0,2900.0,2850.0,FAOSTAT_HISTORICAL
+tomatoes,Tomatoes,Solanum lycopersicum,388,HIGH,2022,415.0,3250.0,2850.0,FAOSTAT_HISTORICAL
+tomatoes,Tomatoes,Solanum lycopersicum,388,HIGH,2023,435.0,3550.0,2850.0,FAOSTAT_HISTORICAL
+tomatoes,Tomatoes,Solanum lycopersicum,388,HIGH,2024,395.0,3280.0,2850.0,FAOSTAT_HISTORICAL
+potatoes,Potatoes,Solanum tuberosum,116,MEDIUM,2018,180.0,1260.0,1650.0,FAOSTAT_HISTORICAL
+potatoes,Potatoes,Solanum tuberosum,116,MEDIUM,2019,195.0,1365.0,1650.0,FAOSTAT_HISTORICAL
+potatoes,Potatoes,Solanum tuberosum,116,MEDIUM,2020,240.0,1780.0,1650.0,FAOSTAT_HISTORICAL
+potatoes,Potatoes,Solanum tuberosum,116,MEDIUM,2021,210.0,1550.0,1650.0,FAOSTAT_HISTORICAL
+potatoes,Potatoes,Solanum tuberosum,116,MEDIUM,2022,235.0,1850.0,1650.0,FAOSTAT_HISTORICAL
+potatoes,Potatoes,Solanum tuberosum,116,MEDIUM,2023,220.0,1800.0,1650.0,FAOSTAT_HISTORICAL
+potatoes,Potatoes,Solanum tuberosum,116,MEDIUM,2024,225.0,1870.0,1650.0,FAOSTAT_HISTORICAL
+onions,Onions (Dry),Allium cepa,403,MEDIUM,2018,210.0,1470.0,2400.0,FAOSTAT_HISTORICAL
+onions,Onions (Dry),Allium cepa,403,MEDIUM,2019,350.0,2550.0,2400.0,FAOSTAT_HISTORICAL
+onions,Onions (Dry),Allium cepa,403,MEDIUM,2020,320.0,2380.0,2400.0,FAOSTAT_HISTORICAL
+onions,Onions (Dry),Allium cepa,403,MEDIUM,2021,310.0,2300.0,2400.0,FAOSTAT_HISTORICAL
+onions,Onions (Dry),Allium cepa,403,MEDIUM,2022,330.0,2600.0,2400.0,FAOSTAT_HISTORICAL
+onions,Onions (Dry),Allium cepa,403,MEDIUM,2023,380.0,3100.0,2400.0,FAOSTAT_HISTORICAL
+onions,Onions (Dry),Allium cepa,403,MEDIUM,2024,360.0,2980.0,2400.0,FAOSTAT_HISTORICAL
+maize,Maize (Corn),Zea mays,56,LOW,2018,210.0,1450.0,2150.0,FAOSTAT_HISTORICAL
+maize,Maize (Corn),Zea mays,56,LOW,2019,235.0,1680.0,2150.0,FAOSTAT_HISTORICAL
+maize,Maize (Corn),Zea mays,56,LOW,2020,225.0,1650.0,2150.0,FAOSTAT_HISTORICAL
+maize,Maize (Corn),Zea mays,56,LOW,2021,260.0,1920.0,2150.0,FAOSTAT_HISTORICAL
+maize,Maize (Corn),Zea mays,56,LOW,2022,290.0,2250.0,2150.0,FAOSTAT_HISTORICAL
+maize,Maize (Corn),Zea mays,56,LOW,2023,275.0,2260.0,2150.0,FAOSTAT_HISTORICAL
+maize,Maize (Corn),Zea mays,56,LOW,2024,270.0,2240.0,2150.0,FAOSTAT_HISTORICAL
+wheat,Wheat (Grain),Triticum aestivum,15,LOW,2018,250.0,1735.0,2350.0,FAOSTAT_HISTORICAL
+wheat,Wheat (Grain),Triticum aestivum,15,LOW,2019,265.0,1840.0,2350.0,FAOSTAT_HISTORICAL
+wheat,Wheat (Grain),Triticum aestivum,15,LOW,2020,270.0,1925.0,2350.0,FAOSTAT_HISTORICAL
+wheat,Wheat (Grain),Triticum aestivum,15,LOW,2021,285.0,2015.0,2350.0,FAOSTAT_HISTORICAL
+wheat,Wheat (Grain),Triticum aestivum,15,LOW,2022,320.0,2500.0,2350.0,FAOSTAT_HISTORICAL
+wheat,Wheat (Grain),Triticum aestivum,15,LOW,2023,305.0,2480.0,2350.0,FAOSTAT_HISTORICAL
+wheat,Wheat (Grain),Triticum aestivum,15,LOW,2024,298.0,2475.0,2350.0,FAOSTAT_HISTORICAL
+green_chillies,Green Chillies,Capsicum annuum,401,HIGH,2018,580.0,4100.0,5400.0,FAOSTAT_HISTORICAL
+green_chillies,Green Chillies,Capsicum annuum,401,HIGH,2019,640.0,4500.0,5400.0,FAOSTAT_HISTORICAL
+green_chillies,Green Chillies,Capsicum annuum,401,HIGH,2020,690.0,5100.0,5400.0,FAOSTAT_HISTORICAL
+green_chillies,Green Chillies,Capsicum annuum,401,HIGH,2021,730.0,5450.0,5400.0,FAOSTAT_HISTORICAL
+green_chillies,Green Chillies,Capsicum annuum,401,HIGH,2022,790.0,6200.0,5400.0,FAOSTAT_HISTORICAL
+green_chillies,Green Chillies,Capsicum annuum,401,HIGH,2023,840.0,6850.0,5400.0,FAOSTAT_HISTORICAL
+green_chillies,Green Chillies,Capsicum annuum,401,HIGH,2024,750.0,6200.0,5400.0,FAOSTAT_HISTORICAL

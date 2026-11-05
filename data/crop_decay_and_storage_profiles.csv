@@ -1,0 +1,19 @@
+Crop_ID,Crop_Name,Ambient_Shelf_Life_Days,Daily_Ambient_Spoilage_Rate_Pct,Transit_Vibration_Loss_PerHour_Pct,Storage_Type,Storage_Name,Decay_Factor_Multiplier,Storage_Cost_per_Quintal_Day_INR,Description
+tomatoes,Tomatoes,6,5.5,0.7,ambient,Ambient Farm Shed,1.0,0.0,Standard uncovered or thatched on-farm storage; highest spoilage rate.
+tomatoes,Tomatoes,6,5.5,0.7,ventilated,Improved Ventilated Shed,0.55,0.8,Shaded with evaporative cooling pads and mesh wire circulation; halves decay.
+tomatoes,Tomatoes,6,5.5,0.7,cold_storage,Commercial Cold Storage (10-12°C),0.12,3.2,Controlled chilling prevents ethylene ripening and decay; extends shelf-life 4x.
+potatoes,Potatoes,35,0.9,0.15,ambient,Standard Farm Heap / Gunny Bags,1.0,0.0,Direct heap or open burlap bags; subject to moisture loss and sprouting.
+potatoes,Potatoes,35,0.9,0.15,ventilated,Dark Ventilated Storage Structure,0.4,0.45,Diffused light and ventilation prevents greening and early sprouting.
+potatoes,Potatoes,35,0.9,0.15,cold_storage,Refrigerated Potato Store (3-4°C),0.05,1.4,Standard commercial cold storage with sprout suppressant; preserves months.
+onions,Onions (Dry),28,1.2,0.2,ambient,Traditional On-Farm Shed,1.0,0.0,Floor heap or open baskets; high moisture causes rotting and sprouting.
+onions,Onions (Dry),28,1.2,0.2,ventilated,Kanda Chawl / Raised Slatted Structure,0.35,0.5,Elevated wooden slatted structure offering bottom and cross-ventilation.
+onions,Onions (Dry),28,1.2,0.2,cold_storage,Controlled Atmosphere Cold Storage,0.08,1.9,Controlled 0-2°C temperature and 65-70% humidity prevents weight loss.
+maize,Maize (Corn),180,0.15,0.03,ambient,Gunny Bags in Storage Room,1.0,0.0,"Standard jute sacks; vulnerable to storage pests, weevils, and moisture."
+maize,Maize (Corn),180,0.15,0.03,hermetic_bag,PICS Hermetic Triple-Layer Bags,0.15,0.25,Sealed oxygen-deprived bag blocks weevils and mould without synthetic chemicals.
+maize,Maize (Corn),180,0.15,0.03,silo,Community Metal/FRP Grain Silo,0.08,0.4,Aerated rodent-proof metal bin preserving grain grade over long horizons.
+wheat,Wheat (Grain),240,0.1,0.02,ambient,Standard Farm Shed,1.0,0.0,Standard farm storage in gunny bags.
+wheat,Wheat (Grain),240,0.1,0.02,hermetic_bag,PICS Hermetic Storage,0.12,0.22,Airtight containment preventing moisture reabsorption.
+wheat,Wheat (Grain),240,0.1,0.02,warehouse,State Warehouse / CWC Accredited,0.06,0.38,"Fumigated, insured, negotiable warehouse receipt eligible."
+green_chillies,Green Chillies,7,4.8,0.6,ambient,Open Gunny / Basket,1.0,0.0,Rapid moisture shriveling and fungal decay within days.
+green_chillies,Green Chillies,7,4.8,0.6,ventilated,Perforated Crates with Mesh,0.5,0.75,Maintains airflow to prevent condensation and black mould.
+green_chillies,Green Chillies,7,4.8,0.6,cold_storage,Refrigerated Chill Store (8-10°C),0.15,3.0,Optimal temperature retention preserving green color and pungency.
