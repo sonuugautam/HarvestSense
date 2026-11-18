@@ -327,6 +327,56 @@ CROPS_DATABASE: Dict[str, Dict[str, Any]] = {
             "Grade B": {"label": "Grade B (Standard Commercial Green)", "price_multiplier": 1.00, "shelf_life_multiplier": 1.00},
             "Grade C": {"label": "Grade C (Soft / Yellowing / Mixed Sizes)", "price_multiplier": 0.72, "shelf_life_multiplier": 0.65}
         }
+    },
+    "cauliflower": {
+        "id": "cauliflower",
+        "name": "Cauliflower",
+        "scientific_name": "Brassica oleracea var. botrytis",
+        "fao_item_code": 393,
+        "fao_item_name": "Cauliflowers and broccoli",
+        "category": "Perishable Vegetable",
+        "perishability_class": "HIGH",
+        "provenance": "FAOSTAT_HISTORICAL",
+        "baseline_price_per_quintal": 2600.0,  # ~ ₹26 / kg
+        "unit": "quintal",
+        "fao_historical_annual": [
+            {"year": 2018, "price_usd_tonne": 300.0, "price_lcu_quintal": 2100.0},
+            {"year": 2019, "price_usd_tonne": 315.0, "price_lcu_quintal": 2210.0},
+            {"year": 2020, "price_usd_tonne": 335.0, "price_lcu_quintal": 2480.0},
+            {"year": 2021, "price_usd_tonne": 350.0, "price_lcu_quintal": 2600.0},
+            {"year": 2022, "price_usd_tonne": 380.0, "price_lcu_quintal": 2980.0},
+            {"year": 2023, "price_usd_tonne": 395.0, "price_lcu_quintal": 3220.0},
+            {"year": 2024, "price_usd_tonne": 360.0, "price_lcu_quintal": 2990.0}
+        ],
+        "seasonality_index": [0.80, 0.78, 0.85, 1.00, 1.20, 1.35, 1.40, 1.30, 1.10, 0.92, 0.82, 0.78],
+        "shelf_life_days_ambient": 5,
+        "daily_spoilage_rate_ambient": 0.050,  # 5% loss per day (yellowing, curd browning, wilting)
+        "vibration_transit_loss_per_hour": 0.006,
+        "storage_profiles": {
+            "ambient": {
+                "name": "Open Heap / Field-Side Shade",
+                "decay_factor": 1.0,
+                "cost_per_quintal_day": 0.0,
+                "description": "Curds yellow, wilt and brown within days in ambient heat."
+            },
+            "ventilated": {
+                "name": "Shaded Ventilated Crates",
+                "decay_factor": 0.55,
+                "cost_per_quintal_day": 0.80,
+                "description": "Shaded, airy crates with wrapped leaves slow wilting and browning."
+            },
+            "cold_storage": {
+                "name": "Cold Room (0-2°C, High Humidity)",
+                "decay_factor": 0.14,
+                "cost_per_quintal_day": 3.00,
+                "description": "Near-freezing, humid storage keeps curds white and firm for weeks."
+            }
+        },
+        "quality_grades": {
+            "Grade A": {"label": "Grade A (Compact White Curd, Fresh Green Leaves)", "price_multiplier": 1.20, "shelf_life_multiplier": 1.15},
+            "Grade B": {"label": "Grade B (Standard Commercial Curd)", "price_multiplier": 1.00, "shelf_life_multiplier": 1.00},
+            "Grade C": {"label": "Grade C (Loose / Yellowing / Small Curd)", "price_multiplier": 0.74, "shelf_life_multiplier": 0.70}
+        }
     }
 }
 
@@ -356,4 +406,3 @@ def get_crop_detail(crop_id: str) -> Dict[str, Any]:
     if crop_id not in CROPS_DATABASE:
         raise KeyError(f"Crop {crop_id} not found in database")
     return CROPS_DATABASE[crop_id]
-

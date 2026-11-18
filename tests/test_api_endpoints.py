@@ -40,6 +40,54 @@ class TestApiEndpoints(unittest.TestCase):
         detail = detail_res.json()
         self.assertEqual(detail["fao_item_code"], 388)
 
+        # Newly added crop: Cauliflower
+        self.assertIn("cauliflower", [c["id"] for c in crops])
+        cauliflower_res = self.client.get("/api/crops/cauliflower")
+        self.assertEqual(cauliflower_res.status_code, 200)
+        self.assertEqual(cauliflower_res.json()["fao_item_code"], 393)
+
+    def test_optimize_cauliflower_endpoint(self):
+        payload = {
+            "crop_id": "cauliflower",
+            "quantity_quintals": 20.0,
+            "harvest_date": "2026-10-29",
+            "quality_grade": "Grade A",
+            "farmer_location": "Pune",
+            "storage_type": "ventilated",
+            "max_wait_days": 7
+        }
+        res = self.client.post("/api/optimize", json=payload)
+        self.assertEqual(res.status_code, 200)
+        self.assertGreater(res.json()["recommended_plan"]["net_profit"], 0)
+
+    def test_optimize_with_each_alternative_vehicle(self):
+        vehicles = [v["id"] for v in self.client.get("/api/vehicles").json()]
+        for vehicle_id in vehicles:
+            payload = {
+                "crop_id": "tomatoes", "quantity_quintals": 18.0,
+                "harvest_date": "2026-10-29", "quality_grade": "Grade A",
+                "farmer_location": "Nashik", "storage_type": "ambient",
+                "max_wait_days": 5, "preferred_vehicle": vehicle_id,
+                "fuel_price_modifier": 1.0
+            }
+            res = self.client.post("/api/optimize", json=payload)
+            self.assertEqual(res.status_code, 200, vehicle_id)
+            self.assertEqual(res.json()["recommended_plan"]["vehicle_id"], vehicle_id)
+
+    def test_optimize_holding_horizon_bounds(self):
+        base = {
+            "crop_id": "tomatoes", "quantity_quintals": 18.0,
+            "harvest_date": "2026-10-29", "quality_grade": "Grade A",
+            "farmer_location": "Nashik", "storage_type": "ventilated"
+        }
+        for days in (0, 3, 7, 14):
+            res = self.client.post("/api/optimize", json={**base, "max_wait_days": days})
+            self.assertEqual(res.status_code, 200)
+            self.assertEqual(len(res.json()["price_profit_timeline"]), days + 1)
+        # Schema rejects horizons beyond 14 days
+        res = self.client.post("/api/optimize", json={**base, "max_wait_days": 15})
+        self.assertEqual(res.status_code, 422)
+
     def test_markets_endpoint(self):
         res = self.client.get("/api/markets")
         self.assertEqual(res.status_code, 200)
@@ -110,4 +158,3 @@ class TestApiEndpoints(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

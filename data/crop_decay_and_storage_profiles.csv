@@ -17,3 +17,6 @@ wheat,Wheat (Grain),240,0.1,0.02,warehouse,State Warehouse / CWC Accredited,0.06
 green_chillies,Green Chillies,7,4.8,0.6,ambient,Open Gunny / Basket,1.0,0.0,Rapid moisture shriveling and fungal decay within days.
 green_chillies,Green Chillies,7,4.8,0.6,ventilated,Perforated Crates with Mesh,0.5,0.75,Maintains airflow to prevent condensation and black mould.
 green_chillies,Green Chillies,7,4.8,0.6,cold_storage,Refrigerated Chill Store (8-10°C),0.15,3.0,Optimal temperature retention preserving green color and pungency.
+cauliflower,Cauliflower,5,5.0,0.6,ambient,Open Heap / Field-Side Shade,1.0,0.0,"Curds yellow, wilt and brown within days in ambient heat."
+cauliflower,Cauliflower,5,5.0,0.6,ventilated,Shaded Ventilated Crates,0.55,0.8,"Shaded, airy crates with wrapped leaves slow wilting and browning."
+cauliflower,Cauliflower,5,5.0,0.6,cold_storage,"Cold Room (0-2°C, High Humidity)",0.14,3.0,"Near-freezing, humid storage keeps curds white and firm for weeks."
